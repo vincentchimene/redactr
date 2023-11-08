@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REDACTR</h1>
+        <p>SCRAMBLE SOME WORDS FROM A BODY OF TEXT CONTENT</p>
+        <div class="input-container">
+            <label for="originalText">Enter your text here:</label>
+            <textarea id="originalText" placeholder="Enter your text here"></textarea>
+        </div>
+        <div class="input-container">
+            <label for="wordsToRedact">Words to Redact:</label>
+            <input type="text" id="wordsToRedact" placeholder="Words to Redact (space-separated)">
+        </div>
+        <div class="input-container">
+            <label for="replacementChar">Replacement Character/Text:</label>
+            <input type="text" id="replacementChar" placeholder="e.g., *, ?, -">
+        </div>
+        <button id="redactButton"><i class="fa fa-eye-slash"></i> Redact Now</button>
+        <button id="copyButton" class="hidden"><i class="fa fa-copy"></i> Copy Redacted Text</button>
+        <div id="redactedText"></div>
+        <div id="stats"></div>
+    </div>
+    <footer>
+        <p>Created by Vicente' for DCTP backend</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
